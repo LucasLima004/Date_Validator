@@ -1,4 +1,6 @@
 #include<iostream>
+#include <ctime>
+#include <stdlib.h>
 using namespace std;
 
 int main(){
@@ -19,6 +21,13 @@ int main(){
     int cont=0;
 
     while (vezes==1){
+        time_t timer;
+        struct tm *horarioLocal;
+        time(&timer); 
+        horarioLocal = localtime(&timer); 
+        int anoAtual = horarioLocal->tm_year + 1900;
+
+
         cout<<"Digite o ano que você quer validar. \n";
         cin>>ano;
         if(((ano)%4)==0){
@@ -58,9 +67,15 @@ int main(){
             break;
         }
         if (dias<=mesaux){
-            cout<<"Data validada, ela está de acordo com o formato!\n";
-            cout<<"Digite o número 1 e tecle enter para prosseguir ou 0 para cancelar.\n";
-            cin>>vezes;
+            if(ano>anoAtual){
+                cout<<"Digite um dia que realmente seja válido\n";
+                cout<<"Digite o número 1 e tecle enter para prosseguir ou 0 para cancelar.\n";
+                cin>>vezes;
+            }else{
+                cout<<"Data validada, ela está de acordo com o formato!\n";
+                cout<<"Digite o número 1 e tecle enter para prosseguir ou 0 para cancelar.\n";
+                cin>>vezes;
+            }
         }else{
             cout<<"Digite um dia que realmente seja válido\n";
             cout<<"Digite o número 1 e tecle enter para prosseguir ou 0 para cancelar.\n";

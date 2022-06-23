@@ -46,9 +46,6 @@
     Its graphical interface has not yet been developed, but its executable file for the Windows operating system is attached to the directory.
   </li>
     The program has a loop that checks for other checks after each one is performed.
-  <li>
-    The program has a loop that checks for other checks after each one is performed.
-  </li>
 </ul>
 
 <h5>Comments:</h5><br>

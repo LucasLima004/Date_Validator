@@ -37,6 +37,9 @@
 <h5>Description:</h5><br>
 <ul>
   <li>
+    This project also checks that the current date is not a false (future) date.
+  </li>
+  <li>
     The project will check if the given date is equivalent to the Gregorian calendar format.
   </li>
   <li>

@@ -1,4 +1,4 @@
-<h1 align="center">My portfólio</h1>
+<h1 align="center">Date validator</h1>
 
 <p align="center">
     <img src="https://user-images.githubusercontent.com/99892157/166393950-a249134d-a59c-4fd7-b9fa-d14d8a0455b9.svg" width="100px"/>
